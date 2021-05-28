@@ -1,0 +1,33 @@
+kurz 
+
+žaci
+učitelé
+počet hodin - integer 
+preferované hodiny - 
+podkurz - 
+
+místnost
+
+id 
+jméno
+odkaz na předmět
+preferovaný čas
+kurz
+patro
+budova
+kapacita
+
+učitel
+id 
+jméno
+odkaz předmět
+kurz
+další udáje..
+
+žák
+id jméno
+ročník
+třída
+preferovaný čas
+kurz 
+skupina
