@@ -1,0 +1,51 @@
+Easy_database
+is a cumbersome module which serves for easy manipulation with sqlite_databases
+
+methods:
+    start - In order to create a database and a table, you need to use this to command, it takes two arguments
+    ("name_of_first_column", "*variable_type")
+    add_columns - IMO, this should be the second command to use, where you establish through a dict in format
+    {"name_of_column":"variable_type"} other columns which you are gonna be using
+    add_info - through this command you can start adding info to your columns
+    show_everything - it returns a list with all the info in the database
+
+*variable types are - text, integer, null, blob(objects), real(float)
+
+Things to add:
+    rename_columns
+    modify_data - this one will be hard with the sqlite syntax
+    make more user friendly start and add_columns
+
+
+Limitations:
+Every database can contain only one table, which might be better for understanding the program
+but for longer run, it is a hideous thing
+
+My suggestion:
+I would leave
+
+
+T = Easy_database("__Student_test")
+
+T.start("id", "integer")
+
+t = {"name":"text", "class":"integer"}
+T.add_columns(t)
+
+T.add_info("158", "Alex", "2")
+T.add_info("159", "Pepa", "8")
+
+print(T.show_everything())
+
+
+
+
+
+
+
+
+
+
+
+
+
