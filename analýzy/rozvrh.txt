@@ -1,0 +1,4 @@
+		Rozvrh
+
+ budou základní programy: 
+random generátor dat 
