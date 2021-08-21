@@ -1,30 +1,20 @@
-Easy_database
-is a cumbersome module which serves for easy manipulation with sqlite_databases
+EASY_DATABASE module
 
-methods:
-    start_of_new_table
-    _add_one_column
-    add_columns
-    add_info
-    show_everything
-    rename_columns
-    show_specific_columns
-    modify_data
-    create_table_of_an_object
-    add_info_to_table_from_object
-    add_more_info_to_table_from_object
-    create_table_of_an_object_plus_add_in_their_info
-    create_table_obj_plus_add_info_plus_how_many_times_info
-    close_database
+    This is an almost complete module for database use + generating data.
 
+    This database works on a SQL system, this means that when you create an object you automatically create a database,
+    then you need to create tables with columns, where you can put your data in.
 
+    I highly advise, for anyone who may want to use this module to carefully read the comments on objects, because
+    you need to know the types of value types in sqlite.
 
+    Every object who wants to use this module needs two functions in format:
+    def name(self):
+        return "name_of_class"
 
+    def data(self):
+        return self.something, self.something, self.something  ### Every data the class has in __init__ method
 
-
-
-
-
-
-
-
+    Problems for future:  modify_data doesnt work, I have no idea why it doesnt work.
+                          functions to show all tables, and overall better show functions
+                          Indeed of unit tests
